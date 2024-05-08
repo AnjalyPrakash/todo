@@ -9,11 +9,20 @@ function Login() {
     const navigate=useNavigate()
 
     //login
-    const handleLogin = async() => {
-            const provider =await new GoogleAuthProvider();
-            return signInWithPopup(auth,provider)      
+    // const handleLogin = async() => {
+    //         const provider =await new GoogleAuthProvider();
+    //         return signInWithPopup(auth,provider)      
+    // }
+    // navigate('/todo')
+    const handleLogin = async () => {
+        try {
+            const provider = await new GoogleAuthProvider();
+            await signInWithPopup(auth, provider);
+            navigate('/todo');
+        } catch (error) {
+            console.error('Error logging in:', error);
+        }
     }
-    navigate('/todo')
     
 
     return (
