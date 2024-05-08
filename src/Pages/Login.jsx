@@ -10,7 +10,7 @@ function Login() {
 
     const handleLogin = async () => {
         try {
-            const provider = await new GoogleAuthProvider();
+            const provider = new GoogleAuthProvider();
             await signInWithPopup(auth, provider);
             navigate('/todo');
         } catch (error) {
