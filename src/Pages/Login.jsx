@@ -24,7 +24,7 @@ function Login() {
             <div className='d-flex justify-content-center align-items-center w-100' style={{ height: '100vh' }}>
                 <Row>
                     <Col md={6}>
-                        <img src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-135.jpg" alt="no image" />
+                        <img style={{width:'100%'}} src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-135.jpg" alt="no image" />
                     </Col>
                     <Col md={6} className='text-center mt-5'>
                         <h2 className='mt-5 mb-5' style={{ fontFamily: '"Cinzel", serif' }}>LOGIN</h2>
