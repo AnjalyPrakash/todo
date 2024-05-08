@@ -8,12 +8,6 @@ function Login() {
 
     const navigate=useNavigate()
 
-    //login
-    // const handleLogin = async() => {
-    //         const provider =await new GoogleAuthProvider();
-    //         return signInWithPopup(auth,provider)      
-    // }
-    // navigate('/todo')
     const handleLogin = async () => {
         try {
             const provider = await new GoogleAuthProvider();
